@@ -1,0 +1,1 @@
+CREATE TABLE `wsa`.`usertable` ( `id` INT(11) NOT NULL AUTO_INCREMENT , `name` VARCHAR(256) NOT NULL , `email` VARCHAR(256) NOT NULL , `password` VARCHAR(256) NOT NULL , `code` INT(11) NOT NULL , `status` VARCHAR(20) NOT NULL , PRIMARY KEY (`id`)) ENGINE = InnoDB;
