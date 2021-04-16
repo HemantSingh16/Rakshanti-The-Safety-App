@@ -1,0 +1,31 @@
+<!--
+Author: arsho
+Facebook: https://www.facebook.com/ars.shovon
+Project: Nearby Hospital using Google Map and Geolocation API.
+
+Customized Google map to display nearby hospitals in current location. 
+
+This page can't load Google Maps correctly:
+The free request quota for this API key is exceeded. Please change the Google API key to your key.
+
+If the browser doesnot have geolocation I set it to a default location. Change it as it suits you,
+
+
+To customize more: https://developers.google.com/maps/documentation/javascript/examples/place-search-pagination
+-->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://maps.googleapis.com/maps/api/place/nearbysearch/json?location=-33.8670522,151.1957362&radius=500&types=food&name=harbour&key=AIzaSyCAPTHslVCSs6Ur4dm_1ZlkSPomRy-Cvmk" async defer></script>
+    <title>Document</title>
+</head>
+<body>
+    <div id="map"></div>    
+</body>
+</html>
+
+
+

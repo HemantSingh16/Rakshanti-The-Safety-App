@@ -1,0 +1,89 @@
+@import url('https://fonts.googleapis.com/css?family=Poppins:200,300,400,500,600,700,800,900&display=swap');
+*
+{
+    margin : 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+body
+{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background: #f6f6eb;
+}
+.container
+{
+    display: grid;
+}
+.accordion
+{
+    margin-top: -10px;
+    max-width: 800px;
+}
+.accordion .contentBx
+{
+    position: relative;
+    margin: 10px 20px;
+}
+.accordion .contentBx .label
+{
+    position: relative;
+    padding: 10px;
+    background: #abdee6;
+    color: #000000;
+    cursor: pointer;
+}
+.accordion .contentBx .label::before
+{
+    content: '+';
+    position: absolute;
+    top: 50%;
+    right: 20px;
+    transform: translateY(-50%);
+    font-size: 1.5em;
+}
+.accordion .contentBx .label::before
+{
+    content: '+';
+}
+.accordion .contentBx .content
+{
+    position: relative;
+    background: #FADADE;
+    height: 0;
+    overflow: hidden;
+    transition: 0.5s;
+    overflow-y: auto;
+}
+.accordion .contentBx.active .content
+{
+    height: 150px;
+    padding: 10px;
+}
+.responsive {
+    width: 100%;
+    max-width: 400px;
+    height: auto;
+  }
+  @media only screen and (max-width: 900px) {
+    /* For mobile phones: */
+    [class*="accordion"] {
+      width: 100%;
+    }
+  }
+
+  .button1{
+    height: 40px;
+    width: 180px;
+    border: none;
+    border-radius: 20px;
+    background: linear-gradient(to left, #ab68ca, #de67a3); 
+    color: #fff;
+    font-weight: bolder;
+    margin-top: 30px;
+    cursor: pointer;
+    outline: none;
+    }

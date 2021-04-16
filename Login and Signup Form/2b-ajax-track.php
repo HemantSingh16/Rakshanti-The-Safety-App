@@ -16,6 +16,14 @@ switch ($_POST['req']) {
     ]);
     break;
 
+  case "spupdate":
+    $pass = $_TRACK->spupdate($_POST['U_id'], $_POST['lng'], $_POST['lat']);
+    echo json_encode([
+      "status" => $pass ? 1 : 0,
+      "message" => $pass ? "OK" : $trackLib->error
+    ]);
+    break;
+
   // (D) GET RIDER LOCATION
   case "get":
     $location = $_TRACK->get($_POST['U_id']);

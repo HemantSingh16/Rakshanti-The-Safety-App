@@ -41,10 +41,17 @@ class Track {
       [$id, date("Y-m-d H:i:s"), $lng, $lat]
     );
   }
+
+  function spupdate ($id, $lng, $lat) {
+    return $this->query(
+      "REPLACE INTO `Social_police` (`U_id`, `track_time`, `track_lng`, `track_lat`) VALUES (?, ?, ?, ?)",
+      [$id, date("Y-m-d H:i:s"), $lng, $lat]
+    );
+  }
  
   // (E) GET RIDER COORDINATES
   function get ($id) {
-    $this->query("SELECT * FROM `victim` WHERE `U_id`=?", [$id]);
+    $this->query("SELECT * FROM `relative_tracker` WHERE `U_id`=?", [$id]);
     return $this->stmt->fetch();
   }
 

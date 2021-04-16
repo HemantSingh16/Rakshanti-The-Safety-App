@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+<link rel="stylesheet" type="text/css" href="police.css">
+</head>
+<body>
+   
+      <div class="container">
+         <h1 style="margin-left:70px;" >SOCIAL POLICE</h1>
+    
+   <div>
+      <img src="police.png.png" alt="Nature" class="responsive" width="500" height="300">
+
+   </div>
+   <div class="accordion">
+   <div class="contentBx">
+   <div class="label">1.Who is Social Police?</div>
+   <div class="content">
+   <p>The volunteer users will register themselves as Social police. Social police will be 
+    helping the surrounding community and help create a better place to live.</p>
+    </div>
+    </div>
+    <div class="contentBx">
+    <div class="label">2.Why the concept of Social Police?</div>
+    <div class="content">
+    <p>Safety is Everyone's responsibility.Thinking of police man,a picture of protector,
+     helper comes into our mind.So why not bring out a police soul from a common man!</p>
+    </div>
+    </div>
+    <div class="contentBx">
+    <div class="label">3.Responsibilty of Social Police?</div>
+    <div class="content">
+    <p>You need to share your location in the application.So when any one near you is feeling unsafe, you will getting the notification about the
+     victim's location and you will need to help the victim.
+     The Social Police has choice to approve for help or decline for the help .
+     Follow the saftey guidelines and by standard guide,so that we ensure your saftey
+     and you need to ensure victim's safety.</p>
+    </div>
+    </div>
+    <center>
+    <div>
+    <form method="get" action="sp_registration.php">
+      <button type="submit" style="height: 40px; margin-top:25px; width: 180px;border: none;border-radius: 20px;background: linear-gradient(to left, #ab68ca, #de67a3);">Click here to register</button>
+   </div>
+   </center>
+   </form>
+    </div>
+    
+
+      </div>
+      
+      <script>
+       const accordion = document.getElementsByClassName
+       ('contentBx');
+
+       for(i = 0; i<accordion.length; i++){
+          accordion[i].addEventListener('click', function(){
+             this.classList.toggle('active')
+          })
+       }
+
+   
+    </script>
+    
+    </body>
+    </html>
+
+
+
+

@@ -1,0 +1,18 @@
+.card{
+    background-color:aliceblue;
+    padding: 5px;
+    border:2px salmon solid;
+    /* border:1px salmon solid; */
+    text-align: center;
+    border-radius: 5px;
+    margin: 0 auto;
+    float: none;
+    margin-bottom: 20px;
+    margin-top: 50px;
+    box-shadow: 5px 10px #8888;
+    /* box-shadow: rgba(240, 46, 170, 0.4) 5px 5px, rgba(240, 46, 170, 0.3) 10px 10px, rgba(240, 46, 170, 0.2) 15px 15px, rgba(240, 46, 170, 0.1) 20px 20px, rgba(240, 46, 170, 0.05) 25px 25px;  
+    
+} */}
+.btn{
+    margin: 10px;  
+}

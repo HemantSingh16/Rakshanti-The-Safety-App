@@ -18,7 +18,7 @@ if(isset($_POST['save']))
             VALUES ($R_id,'$user_id','E', '$phone','$C_area')";
             if (mysqli_query($con, $sql)) 
             {
-                echo "Successfully sent request";
+                header('Location: addRelatives.php');
             }
             else
             {

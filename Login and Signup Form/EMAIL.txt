@@ -1,0 +1,11 @@
+EMAIL
+CLOSE FRIEND , REALTIVE NEWW CSS
+QR CODE INTEGRATION
+HOME PAGE-->IMAGE-->SOCIAL POLICE INFO PAGE-->BUTTON-->link to sp_registration.php
+home image responsive
+police button socho
+New databse check WSA2.sql--test
+Skeleton
+map token add
+home mei extrasms ka add karna
+

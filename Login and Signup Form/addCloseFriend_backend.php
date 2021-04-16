@@ -18,7 +18,7 @@ if(isset($_POST['save']))
             VALUES ($R_id,'$user_id','NE', '$phone','$C_area')";
             if (mysqli_query($con, $sql)) 
             {
-                echo "Successfully sent request";
+                header('Location: addCloseFriends.php');
             }
             else
             {

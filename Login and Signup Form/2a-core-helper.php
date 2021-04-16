@@ -44,7 +44,7 @@ class Track {
  
   // (E) GET RIDER COORDINATES
   function get ($id) {
-    $this->query("SELECT * FROM `relative_tracker` WHERE `U_id`=?", [$id]);
+    $this->query("SELECT * FROM `victim` WHERE `U_id`=?", [$id]);
     return $this->stmt->fetch();
   }
 

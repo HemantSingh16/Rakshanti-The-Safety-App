@@ -73,13 +73,20 @@ if(isset($_POST['signup'])){
                 }
                 else
                 {
-                    /*$sql1="SELECT * FROM user WHERE L_id=$Login_id1";
-                    $result1 = mysqli_query($con, $sql1);
-                    $fetch2 = mysqli_fetch_assoc($result1);
-                    $U_ID1 = $fetch2['U_id'];
-                    $_SESSION['U_id']=$U_ID1;*/
-                    header('location: home.php');
-                    exit(); 
+                    $statement1="SELECT * FROM usertable WHERE id=$Login_id1 AND is_sp=1";
+                    $result_1 = mysqli_query($con, $statement1);
+                    if(mysqli_num_rows($result_1)){
+                        header('location: Sphome.php');
+                    }
+
+                    //$fetch_1 = mysqli_fetch_assoc($result_1);
+                    //$U_ID1 = $fetch2['U_id'];
+                    //$_SESSION['U_id']=$U_ID1;
+                    else{
+                        header('location: home.php');
+                        exit(); 
+                    }
+                    
                 }
                 
             }else{
@@ -114,12 +121,19 @@ if(isset($_POST['signup'])){
                   }
                   else
                   {
-                    /*$sql3="SELECT * FROM user WHERE L_id=$Login_id";
-                    $result3 = mysqli_query($con, $sql3);
-                    $fetch3 = mysqli_fetch_assoc($result);
-                    $U_ID = $fetch3['U_id'];
-                    $_SESSION['U_id']=$U_ID;*/
-                    header('location: home.php');
+                    $statement1="SELECT * FROM usertable WHERE id=$Login_id AND is_sp=1";
+                    $result_1 = mysqli_query($con, $statement1);
+                    if(mysqli_num_rows($result_1) > 0){
+                        header('location: Sphome.php');
+                    }
+
+                    //$fetch_1 = mysqli_fetch_assoc($result_1);
+                    //$U_ID1 = $fetch2['U_id'];
+                    //$_SESSION['U_id']=$U_ID1;
+                    else{
+                        header('location: home.php');
+                        exit(); 
+                    }
                   }
                     
                 }else{
